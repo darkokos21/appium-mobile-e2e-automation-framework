@@ -28,10 +28,10 @@ jobs:
       - name: Start Appium server
         run: nohup appium > appium.log 2>&1 &
 
-      - name: Run tests
-        run: npm test
-        env:
-          NODE_ENV: test
+      # - name: Run tests (The project is meant to be run locally with a real device or emulator)
+      #  run: npm test
+      #  env:
+      #  NODE_ENV: test
 
       # 5️⃣ Placeholder for Allure reporting (optional future use, since Appium needs a real device/emulator)
       # - name: Generate Allure report
