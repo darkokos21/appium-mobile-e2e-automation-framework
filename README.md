@@ -67,6 +67,8 @@ appium
 npm test
 ```
 
+> ⚠️ **Note:** The full end-to-end tests require a local Android emulator or device. In CI/CD (GitHub Actions), the pipeline demonstrates setup of Node.js, dependencies, and Appium server, but the tests are intended to run **locally** where a device or emulator is available.
+
 4. **View the results:**
 - Test logs are printed in the terminal.
 - Screenshots on failure (if configured) will be captured.
